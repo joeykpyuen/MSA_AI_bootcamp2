@@ -2,7 +2,11 @@
 Nowadays writing and publishing texts online is very simple. Anyone can publish anything online from social media, product reviews, blogs, online novels to academic articles. However, many students or general people like me struggle to not write in abbreviations or write in an informal manner when needed as we are so used to typing on our smart devices or computer. Formal style is used often in writing and business situations and with those with whom we do not have close relationships.
 
 ### Solution:
-Hence, to resolve this problem, a text suggestion AI solution can be done. This service is similar to text prediction in which text predictions help users write more efficiently by predicting text quickly and accurately. With this service, it will start from the basics where it eliminates all the user's frequent use of words that are been categorised in these certain fields: **abbreviations, swear words, contraction of words, slang, the figure of speech and broken syntax**. 
+Hence, to resolve this problem, a text suggestion AI solution can be done. 
+
+This service can either be similar to text prediction in which text predictions help users write more efficiently by predicting text quickly and accurately. With this service, it will start from the basics where it eliminates all the user's frequent use of words that are been categorised in these certain fields: **abbreviations, swear words, contraction of words, slang, the figure of speech and broken syntax**. 
+
+Or it can be done as a web app that is suggesting change of vocbulary for the text the user upload or typed in the editor interface. (like grammarly but check for formality).
 
 This is part of an AI solution as it predicts and suggests text based on the user's choices in the past.
 
@@ -37,6 +41,8 @@ Once data is collected, I can start training the model.
 As mentioned the final product of this should be suggesting the user formal text. Thus there are two ways this can be integrated, once the model has been trained and tested.
 1. When a text has been put into the editor of the program (the AI solution user interface will have an editor), it will act like Grammarly but rather than checking grammar, it will check any informal vocabularies been used and suggest the formal word of that. It can be a contraction such as *can't* too *cannot* or an abbreviation such as *lemme* to *let me*. Swear words and other inappropriate words will be suggested to remove them. As for slang it will be either suggested to remove or change to another use of the word. 
 2. It can be integrated into keyboards and act like auto-completion on a smart device's keyboard. It will however not show suggestions of words that you typed but rather the thesaurus of the word you typed. (however, this is a more advanced solution and will be hard to complete in short term)
+
+The solution can be built by using the Azure Power App with Microsoft Text Analytic and open-source text classification to reduce the time for development. 
 
 ### Possible Approach (and Future scalability and extensibility): 
 * Create own dataset by quantifying the formality of individual lexical terms and assigning each word a score of how formal the lexicon is in between the range of -1 to 1. 
