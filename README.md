@@ -42,7 +42,7 @@ As mentioned the final product of this should be suggesting the user formal text
 1. When a text has been put into the editor of the program (the AI solution user interface will have an editor), it will act like Grammarly but rather than checking grammar, it will check any informal vocabularies been used and suggest the formal word of that. It can be a contraction such as *can't* too *cannot* or an abbreviation such as *lemme* to *let me*. Swear words and other inappropriate words will be suggested to remove them. As for slang it will be either suggested to remove or change to another use of the word. 
 2. It can be integrated into keyboards and act like auto-completion on a smart device's keyboard. It will however not show suggestions of words that you typed but rather the thesaurus of the word you typed. (however, this is a more advanced solution and will be hard to complete in short term)
 
-The solution can be built by using the Azure Power App with Microsoft Text Analytic and open-source text classification to reduce the time for development. 
+The solution can be built by using the Azure Power App with Microsoft Text Analytic and open-source text classification to reduce the time for development. In terms of actual execution of using the Text Analytic service, Microsoft provided a [tutorial](https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/tutorials/tutorial-power-bi-key-phrases) that can be helpful for me when I need to integrate the service with my solution. 
 
 ### Possible Approach (and Future scalability and extensibility): 
 * Create own dataset by quantifying the formality of individual lexical terms and assigning each word a score of how formal the lexicon is in between the range of -1 to 1. 
